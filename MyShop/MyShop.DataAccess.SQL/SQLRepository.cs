@@ -55,3 +55,4 @@ namespace MyShop.DataAccess.SQL
             context.Entry(t).State = EntityState.Modified;
         }
     }
+}
