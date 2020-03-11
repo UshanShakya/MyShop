@@ -156,15 +156,5 @@ namespace MyShop.Services
                 return model;
             }
         }
-
-        List<BasketItemViewModel> IBasketService.GetBasketItems(HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
-
-        BasketSummaryViewModel IBasketService.GetBacketSummary(HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
