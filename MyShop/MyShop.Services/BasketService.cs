@@ -132,7 +132,13 @@ namespace MyShop.Services
                 return new List<BasketItemViewModel>();
             }
         }
+        public void ClearBasket(HttpContextBase httpContext)
+        {
+            Basket basket = GetBasket(httpContext,false);
+            basket.BasketItems.Clear();
+            basketContext.Commit();
 
+        }
         public BasketSummaryViewModel GetBacketSummary(HttpContextBase httpContext)
         {
             Basket basket = GetBasket(httpContext, false);
